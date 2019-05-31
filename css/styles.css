@@ -1,0 +1,84 @@
+
+
+/*     font-family: 'Muli', sans-serif;
+
+    font-family: 'Nanum Gothic', sans-serif; */
+
+
+* {
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+    color: darkgrey;
+}
+
+h2, nav ul li {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 0.9em;
+    font-weight: 900;
+    margin: 40px auto;
+}
+
+nav {
+    margin: 40px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 25px;
+}
+
+.profile {
+    margin-bottom: 80px;
+}
+
+.profile img {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.project img {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact {
+    margin-top: 120px;
+}
+
+.contact p span {
+    font-weight: 900;
+    margin-left: 20px;
+}
+
+footer {
+    padding: 20px 10px;
+    margin-top: 40px;
+}
+
+footer h4:first-of-type {
+    float: left;
+}
+
+footer h4:last-of-type {
+    float: right;
+    text-transform: uppercase;
+}
