@@ -1,7 +1,8 @@
 
 
-/*     font-family: 'Muli', sans-serif;
 
+/*  Google Fonts Used
+    font-family: 'Muli', sans-serif;
     font-family: 'Nanum Gothic', sans-serif; */
 
 /* Color Theme Swatches in Hex */
@@ -13,32 +14,25 @@
     --dark-brown-color: #5D3F29;
 }
 
-.ネギ(根元)-2-hex { color: #F3E8D6; }
-.ネギ(根元)-3-hex { color: #C2AD9D; }
-.ネギ(根元)-4-hex { color: #766150; }
-.ネギ(根元)-5-hex { color: #5D3F29; }
-
-/* Color Theme Swatches in RGBA */
-.ネギ(根元)-1-rgba { color: rgba(0, 117, 116, 1); }
-.ネギ(根元)-2-rgba { color: rgba(243, 232, 214, 1); }
-.ネギ(根元)-3-rgba { color: rgba(194, 173, 157, 1); }
-.ネギ(根元)-4-rgba { color: rgba(118, 97, 80, 1); }
-.ネギ(根元)-5-rgba { color: rgba(93, 63, 41, 1); }
-
+/* Base Body & Text Styles */
 * {
     font-family: 'Muli', sans-serif;
     font-weight: 700;
     box-sizing: border-box;
 }
 
+html {
+    background-color: var(--dark-brown-color);
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  display: flex;
-  flex-flow: column nowrap;
-  margin: 0 auto;
-  max-width: 1024px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 auto;
+    max-width: 1024px;
 }
 
 p {
@@ -56,6 +50,14 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Header Styles */
+
+header {
+    background-color: var(--green-color);
+    padding: 5% 5%;
+    border-bottom: #766150 10px solid;
+}
+
 h1 {
     margin: 0;
     color: whitesmoke;
@@ -70,14 +72,9 @@ h2 {
     margin: 40px auto;
 }
 
-header {
-    background-color: var(--green-color);
-    padding: 20px 20px;
-    border-bottom: #766150 10px solid;
-}
 
 nav {
-    padding: 15px 0;
+    padding: 3% 0;
 }
 
 nav ul {
@@ -87,9 +84,9 @@ nav ul {
 }
 
 nav ul li {
-    padding: 10px 0;
+    padding: 3% 0;
     background-color: var(--light-tan-color);
-    margin: 5px 0;
+    margin: 2% 0;
 }
 
 .crop_wrapper {
@@ -109,8 +106,10 @@ nav ul li {
     color: whitesmoke;
 }
 
+/* Main Section Styles */
+
 main {
-    padding: 20px 20px;
+    padding: 5% 5%;
     background-color:var(--light-tan-color);
 }
 
@@ -129,7 +128,7 @@ main {
 }
 
 .experience ul li {
-    margin: 5px 0;
+    margin: 2% 0;
     padding: 10px 10px 10px 10px;
     background-color: var(--dark-tan-color);
     display: flex;
@@ -152,8 +151,10 @@ main {
     margin-left: 20px;
 }
 
+/* Footer Styles */
+
 footer {
-    padding: 20px 20px;
+    padding: 5% 5%;
     border-top: #766150 10px solid;
     background-color: var(--green-color);
     color: whitesmoke;
@@ -172,25 +173,24 @@ footer nav {
     display: none;
 }
 
+
+
 @media screen and (min-width: 768px) {
     h1, h2 {
         font-size: 1.5em;
     }
 
-    nav {
-        display: flex;
-        justify-content: center;
-    }
-
     nav ul {
         margin: 0;
+        display: flex;
+        justify-content: center;
     }
     
     nav ul li {
         display:inline-block;
-        padding: 10px;
+        padding: 2%;
         border-radius: 20px;
-        margin: 0 20px;
+        margin: 0 2%;
     }
 
     .profile {
@@ -225,7 +225,7 @@ footer nav {
     }
 
     .project p {
-        padding: 0 30px
+        padding: 0 6%;
     }
 
     .experience ul {
@@ -238,6 +238,10 @@ footer nav {
         width: 30%;
         justify-content: space-around;
         text-align: left;
+    }
+
+    .experience ul li:nth-of-type(2) p {
+        margin-top: auto;
     }
 
     .contact {
@@ -254,7 +258,7 @@ footer nav {
     
     footer {
 
-        padding-bottom: 50px;
+        padding-bottom: 8%;
         display: flex;
         justify-content: space-between;
     }
@@ -280,21 +284,31 @@ footer nav {
     }
 }
 
+
+
 @media screen and (min-width: 1024px) {
     header {
         display: flex;
         flex-flow: row wrap;
-        padding: 40px 40px;
+        justify-content: space-between;
     }
 
     header h1 {
-        text-align: left; 
+        text-align: left;
+        font-size: 1.8em; 
     }
 
     header nav {
-        margin: 0 0 20px auto;
-        margin-bottom: 50px;
+        margin: 0 0 5% auto;
         padding: 0;
+    }
+
+    header nav ul {
+        justify-content: flex-end;
+    }
+
+    header nav ul li {
+        padding: 4%;
     }
 
     header nav ul li:last-child {
@@ -307,28 +321,25 @@ footer nav {
 
     .profile p {
         max-width: 57%;
-        margin-right: 20px;
-    }
-
-    main {
-        padding: 40px 40px;
+        margin-right: 2%;
     }
 
     .project {
-    max-width: 32%;
+        max-width: 32%;
+    }
+
+    .experience p {
+        max-width: 80%;
+        margin: 0 auto;
     }
 
     .experience ul li {
         justify-content: space-around;
     }
-  
-    .contact p {
-    max-width: 55%;
-    margin: 10px auto 20px auto;
-    font-size: 1.2em;
-    }
 
-    footer {
-        padding: 40px 40px;
+    .contact p {
+        max-width: 55%;
+        margin: 10px auto 20px auto;
+        font-size: 1.2em;
     }
 }
